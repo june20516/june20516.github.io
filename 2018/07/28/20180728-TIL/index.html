@@ -1,0 +1,44 @@
+<!DOCTYPE html><html lang="en-us"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>20180728 TIL | Codeverse</title><meta name="description"><meta name="generator" content="Codeverse"><meta name="author" content="Bran"><meta name="keywords" content="sjaak van den berg, svdb, bitcoin, crypto, payment, integration, bitcoins, wordpress, betaling, webshop, front end, design, ontwerp, developer"><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=0"><link rel="stylesheet" type="text/css" href="/styles/screen.css"><link rel="apple-touch-icon" sizes="57x57" href="/images/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/images/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/images/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/images/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png"><link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png"><link rel="icon" type="image/png" sizes="160x160" href="/images/favicon-160x160.png"><link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png"><meta name="msapplication-TileColor" content="#121315"><meta name="msapplication-TileImage" content="/images/mstile-144x144.png"></head><body itemscope itemtype="https://schema.org/WebPage"><header itemscope itemtype="https://schema.org/WPHeader"><a href="/"><img src="/images/svdb.png" alt="Codeverse" title="Codeverse"></a><h1><a href="/" alt="Codeverse" title="Codeverse" itemprop="headline">Codeverse</a></h1><p itemprop="description">망망대우주를 떠다니는 개발자 Bran</p><nav itemscope itemtype="https://schema.org/SiteNavigationElement"><ul><li itemprop="name"><a href="/" alt="Home" title="Home" itemprop="url">Home</a></li><li itemprop="name"><a href="/articles" alt="Articles" title="Articles" itemprop="url">Articles</a></li><li itemprop="name"><a href="/about" alt="About" title="About" itemprop="url">About</a></li></ul></nav><div class="space"></div></header><main itemscope itemtype="https://schema.org/Blog"><article class="full"><h1 itemprop="headline">20180728 TIL</h1><span class="post-meta">Published on<time itemprop="datePublished" datetime="2018-07-28T04:56:57.000Z"> 토요일, 7월 28일 2018 at 13:56</time><br>Last updated on<time itemprop="dateModified" datetime="2018-07-28T04:56:57.000Z"> 월요일, 6월 7일 2021 at 21:33</time></span><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/june20516/cs-level1/blob/master/calculator/strCalculator.html">계산기 HTML</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/june20516/cs-level1/blob/master/calculator/strCalculator.js">계산기 js</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/june20516/cs-level1/blob/master/calculator/strCalculator.css">계산기 css</a></li>
+</ul>
+<h2 id="DOM-제어"><a href="#DOM-제어" class="headerlink" title="DOM 제어"></a>DOM 제어</h2><ul>
+<li><code>var a = document.createElement(ul);</code> : ul 엘리먼트를 만들어 a에 넣는다.</li>
+<li><code>a.id = &#39;abab&#39;;</code> : a의 id로 abab가 들어감.</li>
+<li><code>var b = document.createElement(li);</code> : li 엘리먼트 b에 저장.</li>
+<li><code>a.appendChild(b);</code> : b의 엘리먼트를 a의 자식으로 넣는다.</li>
+</ul>
+<h2 id="깃-브랜치-branch"><a href="#깃-브랜치-branch" class="headerlink" title="깃 브랜치 branch"></a>깃 브랜치 branch</h2><ul>
+<li>브랜치branch : 원본을 두고 기능을 변경해보고 싶을 때 생성(version을 만드는). 게임의 세이브 파일을 새로 저장하는 것과 비슷 ?</li>
+<li>머지merge : 한 브랜치의 내용을 다른 브랜치에 반영.</li>
+<li>체크아웃checkout : 저장소에서, 특정 브랜치나 커밋으로 돌아갈 때 사용. 브랜치의 경우, 소스트리에서는 원하는 브랜치를 더블클릭만으로 쉽게 체크아웃 가능.</li>
+</ul>
+<h2 id="계산기-만들기"><a href="#계산기-만들기" class="headerlink" title="계산기 만들기"></a>계산기 만들기</h2><h3 id="로직"><a href="#로직" class="headerlink" title="로직"></a>로직</h3><ul>
+<li>문자열 계산기에 앞서 진짜 동네 가게에서 두드릴 법한 버튼달린 계산기를 만들고 싶었다. 그래서 무작정 시작.</li>
+<li>프로토타입 함수를 많이 써야 할 것 같았다. 생성자를 사용해 입력받는 값마다 배열을 생성하려고 했으나… 객체에 주어지는 것이 이름과 배열밖에 없으므로 과하다고 판단.</li>
+</ul>
+<ol>
+<li>입력부에서 첫번쨰 입력을 받는다 &gt; 받은 값을 출력.</li>
+<li>연산자 버튼을 누를 때 해당 값을 보존값으로 보존, 연산자를 변환하고 입력부에서 다시 입력받음 &gt; 출력.</li>
+<li><code>=</code> 을 눌렀을 때 해당 연산자에 맞는 계산을 스위치/케이스로 찾아 연산. 그 값을 다시 보존값으로 보존.</li>
+<li>AC(초기화) 는 새로고침으로 퉁쳤다.</li>
+</ol>
+<ul>
+<li>error<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">opt = &#123;&#125;;</span><br><span class="line">opt.N = <span class="number">0</span>;</span><br><span class="line">opt.Box = <span class="built_in">document</span>.getElementById(<span class="string">&#x27;outbox&#x27;</span>);</span><br><span class="line">opt.Num = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">this</span>.N = ipt.ar.join(<span class="string">&#x27;&#x27;</span>)*<span class="number">1</span>;</span><br><span class="line">    <span class="built_in">this</span>.Box.innerHTML = <span class="built_in">this</span>.N;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>위 코드가 작동을 안함…<ul>
+<li><em>이유를 알았다.!</em></li>
+<li>getElementBy를 사용할 때, 가져오려는 엘리먼트가 스크립트의 뒤에 있으면 명령을 실행할 당시는 해당 엘리먼트가 없기 떄문에 . (그럼 무조건 스크립트는 아래에 있어야 할까? )</li>
+</ul>
+</li>
+</ul>
+<h3 id="css-사용법"><a href="#css-사용법" class="headerlink" title="css 사용법"></a>css 사용법</h3><ul>
+<li>텍스트의 세로정렬이 이렇게 어려울 줄은 몰랐다. 내가 적용해서 해결한 방법은,<ul>
+<li>line-height를 element의 height와 같게 설정. </li>
+<li>이거 전에 다른거 적용해보려고 position을 막 absolute로 바꿨었는데, 이 방법이 position에 영향을 받는지 확인하진 못했다.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>객체를 만들어 쓰고는 있지만, 그 객체들 사이에 유기성이 별로 없는 것 같다. 단지 기능을 더 크게 구분하기만 하는 느낌.<br>스스로 코딩을 한번 하게 되면 하루를 다 쓴다… 시간이 오래걸리더라도 해내면 기분은 좋지만, 효율적인지는 잘 모르곘다. 공부해야 할 것들이 매우매우 많은데 😂</p>
+</article></main></body></html>
